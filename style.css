@@ -28,18 +28,36 @@ main{
 	background: #345678;
 }
 
-.product{
-	padding: 10px;
+/* filter style */
+
+fieldset:nth-child(1) label{
+	display: block;
 }
+
+.on{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: white;
+	z-index: 100;
+	display: block;
+}
+
+
 
 /* product card style */
 
-.card-image{
-	margin: 0 auto;
-	padding: 10px 0;
-	border: 1px solid black;
-	border-radius: 10px;
-	box-sizing: border-box;
+.product{
+	background: #fff;
+	padding: 20px;
+	
+}
+
+.card-img-top{
+	padding: 10px;
+	text-align: center;
 }
 
 .card i{
@@ -49,7 +67,7 @@ main{
 .productPrice{
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .productPrice p{
@@ -60,4 +78,5 @@ main{
 	color: red;
 	font-size: 40px;
 }
+
 
