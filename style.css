@@ -24,6 +24,8 @@ main{
 	height: 300px;
 }
 
+/* Menu style */
+
 .bg-menu{
 	background: #345678;
 }
@@ -41,7 +43,7 @@ fieldset:nth-child(1) label{
 	top: 0;
 	left: 0;
 	background: white;
-	z-index: 100;
+	z-index: 14;
 	display: block;
 }
 
@@ -78,5 +80,4 @@ fieldset:nth-child(1) label{
 	color: red;
 	font-size: 40px;
 }
-
 
