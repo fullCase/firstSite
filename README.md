@@ -1,2 +1,2 @@
 # firstSite
-<h2>Look at this: <a>https://fullcase.github.io/firstSite/</a></h2>
+<h2>Look at this: https://fullcase.github.io/firstSite/</h2>
