@@ -5,59 +5,137 @@
    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
    <link rel = "stylesheet" href = "bootstrap/css/bootstrap.min.css">
-   <link rel="stylesheet" href="style.css">
+   <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
    <title>ShopLoGo</title>
 </head>
 <body>
 	<header>
 		<div class = "slider">
-			
+			<h1>Sale 70%! 50%!</h1>
 		</div>
 		<nav>
 			<div class = "navbar navbar-expand-md navbar-dark bg-menu">
-				<a class = " col-12 col-sm-1 navbar-brand text-center" href="">ShopLoGo</a>
+				<a class = " col-12 col-md-1 navbar-brand text-center" href="">ShopLoGo</a>
 				<form class = "col-9 col-sm-6 form-inline order-1" >
-					<div class = "input-group w-75 ">
+					<div class = "input-group w-75 mx-auto">
 						<input class = "form-control" type = "search" list = "clothesSearch">
 						<div class = "input-group-append">
-							<button class = "btn btn-danger" type = "button"><i	class = "fas fa-search"></i></button>
+							<button class = "btn btn-danger" type = "button"><i class = "fas fa-search"></i></button>
 						</div>
 						<datalist id = "clothesSearch">
-							<option value = "gloves">gloves</option>
-							<option value = "hat">hat</option>
-							<option value = "jacket">jacket</option>
-							<option value = "coat">coat</option>
-							<option value = "t-shirt">t-shirt</option>
-							<option value = "shirt">shirt</option>
-							<option value = "sweater">sweater</option>
-							<option value = "dress">dress</option>
-							<option value = "trousers">trousers</option>
-							<option value = "short">short</option>
-							<option value = "socks">socks</option>
-							<option value = "boots">boots</option>
+							<option value = "Gloves">men, women, kids</option>
+							<option value = "Hat">men, women, kids</option>
+							<option value = "Jacket">men, women, kids</option>
+							<option value = "Coat">men, women, kids</option>
+							<option value = "T-shirt">men, women, kids</option>
+							<option value = "Shirt">men, women, kids</option>
+							<option value = "Sweater">men, women, kids</option>
+							<option value = "Dress">women, girl</option>
+							<option value = "Trousers">men, women, kids</option>
+							<option value = "Short">men, women, kids</option>
+							<option value = "Socks">men, women, kids</option>
+							<option value = "Boots">men, women, kids</option>
 						</datalist>
 					</div>
 				</form>	
 
-				<button class = "col-1 navbar-toggler" type = "button" data-togler = "collapse" data-target = "#menu" aria-controls = "menu" aria-expanded = "false">
-					<span class = "navbar-toggler-icon"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls = "menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 				</button>
-				
-				<div class = "collapse navbar-collapse order-11">
-					<ul class = "navbar-nav" id = "menu">
+
+				<div class = "collapse navbar-collapse order-9" id = "menu">
+					<ul class = "navbar-nav">
 						<li class = "nav-item">
-							<a class = "nav-link" href = "shopCard.html">sexist</a>
+							<a class="nav-link active" href="#">Home</a>
 						</li>
-						<li class = "nav-item">
-							<a class = "nav-link" href="">women</a>
+
+						<li class = "nav-item dropdown position-static">
+							<a class = "nav-link dropdown-toggle" data-toggle = "dropdown" href="">Sexist</a>
+							<div class = "dropdown-menu megaMenu">
+								<div class = "row">
+									<div class = "col-12 col-md-3">
+										<img class = "img img-fluid" src="" alt="">
+									</div>
+
+									<div class = "col-12 col-md-3 megaMenuItem">
+										<h6 class = "dropdown-header">Upper-body</h6>
+										<a class = "dropdown-item" href="">jacket</a>
+										<a class = "dropdown-item" href="">coat</a>
+										<a class = "dropdown-item" href="">sweater</a>
+										<a class = "dropdown-item" href="">t-shirt</a>
+										<a class = "dropdown-item" href="">shirt</a>	
+									</div>
+
+									<div class = "col-12 col-md-3 megaMenuItem">
+										<h6 class = "dropdown-header">Lower-body</h6>
+										<a class = "dropdown-item" href="">trousers</a>
+										<a class = "dropdown-item" href="">short</a>	
+									</div>
+
+									<div class = "col-12 col-md-3 megaMenuItem">
+										<h6 class = "dropdown-header">Accessories</h6>
+										<a class = "dropdown-item" href="">sunglasses</a>
+										<a class = "dropdown-item"	href="">gloves</a>
+										<a class = "dropdown-item"	href="">hat</a>
+										<a class = "dropdown-item"	href="">socks</a>
+									</div>
+
+									<footer class = "col-12">
+										<a class = "dropdown-item text-center" href="">Search all</a>
+									</footer>
+								</div>
+							</div>
 						</li>
-						<li class = "nav-item">
-							<a class = "nav-link" href="">kids</a>
+
+						<li class = "nav-item dropdown position-static">
+							<a class = "nav-link dropdown-toggle" data-toggle = "dropdown" href="">Women</a>
+							<div class = "dropdown-menu megaMenu">
+								<div class = "row">
+									<div class = "col-12 col-md-3">
+										<img class = "img img-fluid" src="" alt="">
+									</div>
+
+									<div class="col-12 col-md-3 megaMenuItem">
+										<h6 class = "dropdown-header">Upper-body</h6>
+										<a class = "dropdown-item" href="">jacket</a>
+										<a class = "dropdown-item" href="">coat</a>
+										<a class = "dropdown-item" href="">sweater</a>
+										<a class = "dropdown-item" href="">t-shirt</a>
+										<a class = "dropdown-item" href="">shirt</a>    
+										<a class = "dropdown-item" href="">shirt</a>    
+										<a class = "dropdown-item" href="">dress</a>
+									</div>
+
+									<div class="col-12 col-md-3 megaMenuItem">
+										<h6 class = "dropdown-header">Lower-body</h6>
+										<a class = "dropdown-item" href="">trousers</a>
+										<a class = "dropdown-item" href="">short</a>
+									</div>
+
+									<div class="col-12 col-md-3 megaMenuItem">
+										<h6 class = "dropdown-header">Accessories</h6>
+										<a class = "dropdown-item" href="">sunglasses</a>
+										<a class = "dropdown-item" href="">gloves</a>
+										<a class = "dropdown-item" href="">hat</a>
+										<a class = "dropdown-item" href="">socks</a>
+									</div>
+
+									<footer class = "col-12">
+										<a class = "dropdown-item text-center" href="">Search all</a>
+									</footer>
+								</div>	
+							</div>
 						</li>
-					</ul>
+					</ul>	
 				</div>
 				
-				<button class = "col-1 btn order-12"><a href = "shopCard.html"><i class = "fas fa-shopping-cart text-center text-white"></i></a></button>
+				<button class = "col-1 btn order-11">
+					<a href = "shopCard.html">
+						<i class = "fas fa-shopping-cart text-center text-white"></i>
+					</a>
+				</button>
 			</div>
 		</nav>
 	</header>
@@ -66,12 +144,15 @@
 			<section class = "col-12 container">
 				<div class = "row">
 					<div class = "col-12">
-						<button class = "btn d-sm-none" id = "filterButton" type = "button" >
+						<button class = "btn" id = "filterButton" type = "button">
 							<i class = "fas fa-list"></i>
+						</button>
+						<button class = "btn">
+							<i class = "fas fa-sort"></i>
 						</button>
 					</div>
 
-					<div class = "col-sm-2 filterContainer d-none d-sm-block" id = "filter">
+					<div class = "col-md-2 filterContainer" id = "filter">
 						<form>
 							<fieldset>
 								<legend>Size:</legend>
@@ -91,7 +172,7 @@
 							</fieldset>
 
 							<fieldset>
-								<input class = "btn btn-danger btn-block" id = "filterContainerButton" type="button" value="search">
+								<input class = "btn btn-danger" id = "buttonInFilter" type = "button" value="search">
 							</fieldset>
 						</form>
 					</div>
@@ -101,8 +182,8 @@
 					</article> -->
 
 					<article class = "col-12 col-sm-9 product">
-						<section class = "row">
-							<section class = "col-12 col-md-6 col-lg-4 card">
+						<section class = "row justify-content-around">
+							<section class = "col-12 col-md-5 col-lg-3 card">
 								<div class = "card-header text-center">
 									<p class = "h3">Sale</p>
 								</div>
@@ -118,14 +199,15 @@
 										<li class = "list-group-item">color: red</li>
 									</ul>
 									<div class = "productPrice">
-										<p class = "productNowPrice">15$</p>
-										<sup class = "productOldPrice"><s>30$</s></sup>	
+										<p class = "productNowPrice">15$
+										<sup class = "productOldPrice"><s>30$</s></sup>
+										</p>	
 									</div>
 									<button class = "btn btn-success btn-block">buy now</button>
 								</div>
 							</section>
 
-							<section class = "col-12 col-md-6 col-lg-4 card">
+							<section class = "col-12 col-md-5 col-lg-3 card">
 								<div class = "card-header text-center">
 									<p class = "h3">Sale</p>
 								</div>
@@ -141,13 +223,37 @@
 										<li class = "list-group-item">color: blue</li>
 									</ul>
 									<div class = "productPrice">
-										<p class = "productNowPrice">9$</p>
-										<p class = "productOldPrice"><s>15$</s></p>	
+										<p class = "productNowPrice">9$
+										<sup class = "productOldPrice"><s>15$</s></sup></p>	
 									</div>
 									<button class = "btn btn-success btn-block">buy now</button>
 								</div>
 							</section>
 
+
+							<section class = "col-12 col-md-5 col-lg-3 card">
+								<div class = "card-header text-center">
+									<p class = "h3">Sale</p>
+								</div>
+								<div class = "card-img-top">
+									<i class = "fas fa-tshirt" style = "color: rgb(7, 102, 15);"></i>
+								</div>
+								<div class = "card-body">
+									<h5 class = "card-title">T-shirt</h5>
+									<h6 class = "card-subtitle">men upper-body</h6>
+									<ul class = "list-group list-group-flush">
+										<li class = "list-group-item">producer: ShopLoGo</li>
+										<li class = "list-group-item">size: xl</li>
+										<li class = "list-group-item">color: green</li>
+									</ul>
+									<div class = "productPrice">
+										<p class = "productNowPrice">15$
+										<sup class = "productOldPrice"><s>30$</s></sup>
+										</p>	
+									</div>
+									<button class = "btn btn-success btn-block">buy now</button>
+								</div>
+							</section>
 						</section>
 					</article>
 
@@ -166,6 +272,6 @@
 	</script>	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src=	"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-	<script src= "bootstrap/js/bootstrap.min.js"></script>        
+	<script src="bootstrap/js/bootstrap.min.js"></script>        
 </body>
 </html>
